@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTRANKA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Astranka</h1>
+    <p>Artist | Student | Musician</p>
+  </header>
+
+  
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I am currently studying Industrial Design Engineering at the Budapest University of Technology and Economics (BME).</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <h2>Latest Projects</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="images/wedding.jpg" alt="Project 1">
+        <h3>Wedding gift</h3>
+        <p>A special gift that I made for a very special day.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/joker.jpg" alt="Project 2">
+        <h3>Joker portrait</h3>
+        <p>Black and white drawing made with various art supplies.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/auto.jpg" alt="Project 3">
+        <h3>Tesla sketch</h3>
+        <p>Just a quick sketch that ended up as a birthday gift.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Latest Visitor Section (Random User) -->
+  <section class="latest-visitor">
+    <h2>Latest Visitor</h2>
+    <div class="user-profile">
+      <img id="user-photo" alt="User Photo">
+      <h3 id="user-name"></h3>
+      <p id="user-email"></p>
+      <p id="user-location"></p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Astranka. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript to fetch data from the Random User API -->
+  <script src="script.js"></script>
+</body>
+</html>
