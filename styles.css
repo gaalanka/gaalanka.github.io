@@ -69,6 +69,12 @@ section.about p {
   line-height: 1.8;
 }
 
+section.about img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
 /* Portfolio Section */
 section.portfolio {
   width: 100%;
