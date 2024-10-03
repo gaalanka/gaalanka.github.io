@@ -37,7 +37,7 @@ header {
 
 header h1 {
   font-family: 'Brush Script MT', cursive;
-  font-size: 4em; /* Kisebb mobil képernyőkön */
+  font-size: 8em;
   font-weight: 600;
   color: #6b2525;
 }
@@ -161,95 +161,32 @@ section.contact button:hover {
   background-color: #6b2525;
 }
 
-/* Latest Visitor Section (Random User) */
-section.latest-visitor {
-  background: #fff;
-  padding: 15px; /* Padding */
-  margin-top: 20px;
+/* Latest Visitor Section */
+.latest-visitor {
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
   text-align: center;
-  width: 100%; /* Full width */
-  max-width: 800px; /* Max szélesség a contact részhez */
+  width: 100%;
+  max-width: 800px;
+  margin: 10px 0;
 }
 
-section.latest-visitor h2 {
+.latest-visitor h2 {
   color: #6b2525;
-  margin-bottom: 10px;
-  font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
-section.latest-visitor .user-profile img {
+.latest-visitor img {
   border-radius: 50%;
-  width: 60px; /* Kép méret */
-  height: 60px; /* Kép méret */
-  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
 }
 
-section.latest-visitor h3 {
-  font-size: 1em; /* Szöveg méret */
-  color: #333;
-  margin-bottom: 5px;
-}
-
-section.latest-visitor p {
-  font-size: 0.8em; /* Szöveg méret */
-  color: #666;
-  margin-bottom: 5px;
-}
-
-/* Media Queries for larger screens */
-@media (min-width: 768px) {
-  body {
-      flex-direction: row;
-      justify-content: space-between;
-  }
-
-  header h1 {
-      font-size: 5em;
-  }
-
-  /* Latest Visitor on larger screens */
-  section.latest-visitor {
-      max-width: 800px; /* Szélesség a nagyobb képernyőkön */
-  }
-
-  section.about,
-  section.contact {
-      padding: 15px;
-  }
-
-  .portfolio-grid {
-      grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
-  }
-
-  .portfolio-item h3 {
-      font-size: 1.3em;
-  }
-}
-
-/* Media Queries for smaller screens */
-@media (max-width: 768px) {
-  header h1 {
-      font-size: 2.5em; /* Fejléc méret */
-  }
-
-  section.about,
-  section.contact {
-      padding: 15px; /* Padding */
-  }
-
-  section.latest-visitor {
-      max-width: 90%; /* Kisebb max szélesség mobilra */
-  }
-
-  .portfolio-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 2 columns for mobile */
-  }
-
-  section.portfolio-item h3 {
-      font-size: 1.3em; /* Szöveg méret */
-  }
+.latest-visitor p {
+  color: #555;
+  margin: 5px 0;
 }
 
 /* Footer */
@@ -266,4 +203,26 @@ footer a {
 
 footer a:hover {
   color: #333;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2.5em;
+  }
+
+  section.about,
+  section.contact,
+  .latest-visitor {
+      padding: 15px;
+      margin: 10px 0;
+  }
+
+  section.portfolio {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .portfolio-item h3 {
+      font-size: 1.3em;
+  }
 }
