@@ -43,7 +43,7 @@ header h1 {
 }
 
 header h3 {
-  font-size: 1.8em;
+  font-size: 1.7em;
   font-family: 'Helvetica Neue', italic;
   color: #666;
 }
@@ -162,7 +162,7 @@ section.contact textarea:focus {
 section.contact button {
   padding: 10px;
   font-size: 1.1em;
-  background-color: #a14d4e;
+  background-color: #af4e50;
   color: white;
   border: none;
   border-radius: 5px;
