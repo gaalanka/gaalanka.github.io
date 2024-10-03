@@ -1,0 +1,269 @@
+/* General Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #a14d4e;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 4em; /* Kisebb mobil képernyőkön */
+  font-weight: 600;
+  color: #6b2525;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* About Section */
+section.about {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+section.about h2 {
+  color: #6b2525;
+  margin-bottom: 15px;
+}
+
+section.about p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Portfolio Section */
+section.portfolio {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.portfolio-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-item h3 {
+  padding: 15px;
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+}
+
+.portfolio-item p {
+  padding: 0 15px 15px 15px;
+  color: #666;
+}
+
+/* Contact Section */
+section.contact {
+  background-color: #f4f4f9;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+}
+
+section.contact h2 {
+  color: #6b2525;
+  margin-bottom: 20px;
+}
+
+section.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact input,
+section.contact textarea {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #fff;
+}
+
+section.contact input:focus,
+section.contact textarea:focus {
+  outline: none;
+  border-color: #6b2525;
+}
+
+section.contact button {
+  padding: 10px;
+  font-size: 1.1em;
+  background-color: #a14d4e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+section.contact button:hover {
+  background-color: #6b2525;
+}
+
+/* Latest Visitor Section (Random User) */
+section.latest-visitor {
+  background: #fff;
+  padding: 15px; /* Padding */
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%; /* Full width */
+  max-width: 800px; /* Max szélesség a contact részhez */
+}
+
+section.latest-visitor h2 {
+  color: #6b2525;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+section.latest-visitor .user-profile img {
+  border-radius: 50%;
+  width: 60px; /* Kép méret */
+  height: 60px; /* Kép méret */
+  margin-bottom: 10px;
+}
+
+section.latest-visitor h3 {
+  font-size: 1em; /* Szöveg méret */
+  color: #333;
+  margin-bottom: 5px;
+}
+
+section.latest-visitor p {
+  font-size: 0.8em; /* Szöveg méret */
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+  body {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  header h1 {
+      font-size: 5em;
+  }
+
+  /* Latest Visitor on larger screens */
+  section.latest-visitor {
+      max-width: 800px; /* Szélesség a nagyobb képernyőkön */
+  }
+
+  section.about,
+  section.contact {
+      padding: 15px;
+  }
+
+  .portfolio-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+  }
+
+  .portfolio-item h3 {
+      font-size: 1.3em;
+  }
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2.5em; /* Fejléc méret */
+  }
+
+  section.about,
+  section.contact {
+      padding: 15px; /* Padding */
+  }
+
+  section.latest-visitor {
+      max-width: 90%; /* Kisebb max szélesség mobilra */
+  }
+
+  .portfolio-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 2 columns for mobile */
+  }
+
+  section.portfolio-item h3 {
+      font-size: 1.3em; /* Szöveg méret */
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #6b2525;
+}
+
+footer a:hover {
+  color: #333;
+}
