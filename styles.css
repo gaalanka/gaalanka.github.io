@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f4f4f9;
+  background-color: #f3f3ff;
   color: #333;
   line-height: 1.6;
   font-size: 16px;
@@ -21,7 +21,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #a14d4e;
+  color: #a24c4d;
   transition: color 0.3s ease;
 }
 
