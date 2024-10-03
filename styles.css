@@ -42,6 +42,12 @@ header h1 {
   color: #6b2525;
 }
 
+header h3 {
+  font-size: 1.8em;
+  font-family: 'Helvetica Neue', italic;
+  color: #666;
+}
+
 header p {
   font-size: 1.2em;
   color: #666;
@@ -62,6 +68,7 @@ section.about h2 {
   color: #6b2525;
   margin-bottom: 15px;
 }
+
 
 section.about p {
   font-size: 1.1em;
