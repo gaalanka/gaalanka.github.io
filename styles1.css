@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  body {
+    background-color: #f3f3ff;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #a24c4d;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #333;
+  }
+  
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 8em;
+    font-weight: 600;
+    color: #6b2525;
+  }
+  
+  header h3 {
+    font-size: 1.7em;
+    font-family: 'Helvetica Neue', italic;
+    color: #666;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+ 
+  
+  section.portfolio {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .portfolio-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-item h3 {
+    padding: 15px;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+  }
+  
+  .portfolio-item p {
+    padding: 0 15px 15px 15px;
+    color: #666;
+  }
+  
+  
+  
+  
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  footer a {
+    color: #6b2525;
+  }
+  
+  footer a:hover {
+    color: #333;
+  }
+  
+  
+  @media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+  
+    section.about,
+    section.contact,
+    .latest-visitor {
+        padding: 15px;
+        margin: 10px 0;
+    }
+  
+    section.portfolio {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .portfolio-item h3 {
+        font-size: 1.3em;
+    }
+  }
+  
